@@ -1,9 +1,8 @@
-/* Estrutura do site */
-
-/* Criando topo */
+/* Estrutura do site
+*/
 * {
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 }
 
 body{
@@ -11,7 +10,7 @@ body{
 	background: #fff url(../imagens/fundo.png) repeat-x;
 }
 
-#conteiner {
+#container {
 	width: 750px;
 	margin: 0 auto;
 }
@@ -20,6 +19,7 @@ body{
 	height: 150px;
 	background: url(../imagens/detalhe-topo.png) no-repeat right top;
 	padding-top: 25px;
+	/*border: 1px solid red;*/
 }
 
 .logo {
@@ -29,7 +29,16 @@ body{
 	text-indent: -3000px;
 }
 
-/*Barra de Navegação */
+/* Barra de navegação
+*/
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover {
+	color: #e50040;
+}
 
 ul {
 	margin: 0;
@@ -37,7 +46,7 @@ ul {
 	list-style: none;
 }
 
-#topo ul{
+#topo ul {
 	margin-top: 30px;
 	background: #b10333;
 	float: left;
@@ -66,12 +75,10 @@ ul {
 }
 
 body.home #navegacao a#home,
-body.brasil #navegacao a#brasil,
+body.brasil #navegacao a#brasil, 
 body.internacional #navegacao a#internacional,
-body.economia #navegacao a#economia,
-body.saude #navegacao a#saude,
-body.ciencia #navegacao a#ciencia,
-body.foto #navegacao a#fot{
+body.fotos #navegacao a#fotos 
+{
 	color: #fff;
 	background: #de003e;
 	cursor: text;
@@ -92,14 +99,14 @@ body.foto #navegacao a#fot{
 #primario {
 	width: 270px;
 	float: left;
-	margin: 0 0 20px 195px;
+	margin: 0 0 20px 195px ;
 }
 
 #duas-colunas #primario {
 	width: 555px;
 }
 
-#uma-colunas #primario {
+#uma-coluna #primario {
 	width: 750px;
 	margin: 0 0 20px 0;
 }
@@ -110,14 +117,14 @@ body.foto #navegacao a#fot{
 	margin: 0 0 20px 15px;
 }
 
-/* Caixa*/
+/*Caixa*/
 .caixa {
 	margin: 10px 0;
 	padding: 5px;
 	background: #f3f3f3 url(../imagens/fundo-caixa.png);
 }
 
-h2{
+h2 {
 	font-size: 1em;
 	background: #294c71;
 	color: #fff;
@@ -130,13 +137,8 @@ h2{
 	margin-top: 5px;
 }
 
-/* Rodape */
-#conteiner-rodape {
-	background: #294c71;
-	padding: 20px;
-}
-
-/* Formatar menus laterais */
+/* Formatar menus laterais
+*/
 #lateral ul a {
 	font-size: 0.9em;
 	padding: 3px;
@@ -147,15 +149,16 @@ h2{
 	border-bottom: 1px solid #f3f3f3;
 }
 
-#lateral ul a:hover{
+#lateral ul a:hover {
 	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
 	padding-left: 20px;
 	color: #a1a1a1;
 }
 
-/* Formatando formulários */
+/* Formatando formulários
+*/
 label {
-	display: block;
+	display: block; 
 	cursor: pointer;
 }
 
@@ -179,9 +182,9 @@ img.imagem-principal {
 	border: 3px solid #dfdfdf;
 }
 
-/*Formatando cabeçalhos */
+/* Formatando cabeçalhos */
 h3 {
-	text-decoration: uppercase;
+	text-transform: uppercase;
 	display: inline;
 	font-size: 0.8em;
 	padding: 3px;
@@ -193,11 +196,49 @@ h3 {
 }
 
 .entrevista h3 {
-	background: #be003e;
+	background: #de003e;
 }
 
-/*rodape*/
-#rodape{
+/*Formatando lista de notícias*/
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc; 
+	height: 62px;
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+
+/*Rodape*/
+#container-rodape {
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
 	width: 750px;
 	margin: 0 auto;
 	color: #fff;
